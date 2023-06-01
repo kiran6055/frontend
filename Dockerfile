@@ -1,4 +1,4 @@
-FROM        openjdk:11
+FROM        nginx
 RUN         rm -rf /usr/share/nginx/html/*
 COPY        / /usr/share/nginx/html
 COPY        roboshop.conf /etc/nginx/default.conf
