@@ -1,7 +1,7 @@
 FROM        nginx
 RUN         rm -rf /usr/share/nginx/html/*
 COPY        / /usr/share/nginx/html
-COPY        roboshop.conf /etc/nginx/default.conf
+COPY        roboshop.conf /etc/nginx/conf.d/default.conf
 COPY        nginx.conf /etc/nginx/nginx.conf
 
 # here run is used to remove default file which is given at the time of nginx
